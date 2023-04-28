@@ -1,12 +1,14 @@
 import type { V2_MetaFunction } from "@remix-run/node";
-import { Link } from "@remix-run/react";
+import { Link} from "@remix-run/react";
 
 import { useOptionalUser } from "~/utils";
+
 
 export const meta: V2_MetaFunction = () => [{ title: "Remix Notes" }];
 
 export default function Index() {
   const user = useOptionalUser();
+ 
   return (
     <main className="relative min-h-screen bg-white sm:flex sm:items-center sm:justify-center">
       <div className="relative sm:pb-16 sm:pt-8">
@@ -66,13 +68,17 @@ export default function Index() {
           </div>
         </div>
 
+        
+        
+
 <div className="mx-auto mt-16 max-w-7xl text-center">
   <Link
     to="/posts"
-    className="text-xl text-blue-600 underline"
+    className="flex items-center justify-center rounded-md bg-gray-500 px-4 py-3 font-medium text-white hover:bg-yellow-600"
   >
-    Blog Posts
+    More Blogs
   </Link>
+  
 </div>
 
         <div className="mx-auto max-w-7xl px-4 py-2 sm:px-6 lg:px-8">
