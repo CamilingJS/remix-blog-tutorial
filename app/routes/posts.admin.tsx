@@ -30,7 +30,7 @@ export default function PostAdmin() {
           </ul>
         </nav>
         <main className="col-span-4 md:col-span-3">
-            <Outlet />
+            <Outlet /> 
         </main>
       </div>
     </div>
